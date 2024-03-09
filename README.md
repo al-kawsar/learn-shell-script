@@ -22,3 +22,18 @@ Pada repository ini, saya menggunakan bash shell GNU yang merupakan pengembangan
 > Shell Script adalah sebuah bahasa pemrograman yang disusun berdasarkan perintah - perintah shell.
 
 Jika anda menggunakan linux, maka menyusun perintah - perintah shell di dalam sebuah file shell sama seperti ketika anda membuat sebuah aplikasi.
+
+### File
+
+[`hello.sh`](hello.sh)
+
+#### Mencetak Teks ke Layar
+
+```bash
+#! /usr/bin/bash
+
+echo "Hello, World!"
+```
+---
+- `#! /usr/bin/bash`: Ini disebut sebagai shebang atau hashbang. Ini memberi tahu sistem operasi bahwa script ini harus dieksekusi menggunakan bash (Bourne Again Shell).
+- `echo "Hello, World!"`: Perintah `echo` digunakan untuk mencetak teks ke terminal. Dalam kasus ini, teks yang dicetak adalah "Halo, dunia!".
