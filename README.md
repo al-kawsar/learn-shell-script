@@ -38,3 +38,25 @@ echo "Hello, World!"
 - `#! /usr/bin/bash`: Ini disebut sebagai shebang atau hashbang. Ini memberi tahu sistem operasi bahwa script ini harus dieksekusi menggunakan bash (Bourne Again Shell).
 - `echo "Hello, World!"`: Perintah `echo` digunakan untuk mencetak teks ke terminal. Dalam kasus ini, teks yang dicetak adalah "Halo, dunia!".
 
+#### #2 Input `read`
+
+[`input.sh`](input.sh)
+
+```bash
+#! /usr/bin/bash
+
+# Belajar Input Shell
+
+echo -n "username : "
+read username
+read -sp 'password : ' password
+
+echo -e '\n'
+
+echo "your username : $username"
+echo "your password : $password"
+```
+---
+- `echo -n "username : "`: Ini mencetak teks "username :" tanpa baris baru (newline) di akhirnya.
+- `read username`: Ini akan menunggu pengguna untuk memasukkan username dan menyimpannya dalam variabel `username`.
+- `read -sp 'password : ' password`: Ini mencetak teks "password :" tanpa baris baru (newline) di akhirnya, serta opsi `-s` menyebabkan input tidak ditampilkan saat diketikkan oleh pengguna (cocok untuk password). Input yang dimasukkan oleh pengguna kemudian disimpan dalam variabel `password`.
