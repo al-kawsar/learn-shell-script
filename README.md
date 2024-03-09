@@ -60,3 +60,19 @@ echo "your password : $password"
 - `echo -n "username : "`: Ini mencetak teks "username :" tanpa baris baru (newline) di akhirnya.
 - `read username`: Ini akan menunggu pengguna untuk memasukkan username dan menyimpannya dalam variabel `username`.
 - `read -sp 'password : ' password`: Ini mencetak teks "password :" tanpa baris baru (newline) di akhirnya, serta opsi `-s` menyebabkan input tidak ditampilkan saat diketikkan oleh pengguna (cocok untuk password). Input yang dimasukkan oleh pengguna kemudian disimpan dalam variabel `password`.
+
+#### #3 Komentar
+
+[`comment.sh`](comment.sh)
+
+```bash
+#! /usr/bin/bash
+
+# ini komen
+echo "skript bukan komen" # ini masih komen
+
+# Print Hello World
+echo "Hello, World"
+```
+---
+Di Bash, komentar dimulai dengan tanda `#` dan berlaku hingga akhir baris. Semua teks setelah tanda `#` dianggap sebagai komentar dan tidak diproses oleh interpreter shell.
