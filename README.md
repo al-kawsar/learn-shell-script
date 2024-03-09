@@ -76,3 +76,34 @@ echo "Hello, World"
 ```
 ---
 Di Bash, komentar dimulai dengan tanda `#` dan berlaku hingga akhir baris. Semua teks setelah tanda `#` dianggap sebagai komentar dan tidak diproses oleh interpreter shell.
+
+#### #4 Mengoper Argumen
+
+[`pass_arguments.sh`](pass_arguments.sh)
+
+Dalam Bash, Anda dapat menggunakan argumen baris perintah yang disebut sebagai `$1`, `$2`, `$3`, dan seterusnya untuk mengambil nilai yang diberikan saat menjalankan skrip. Argumen ini memungkinkan Anda memberikan input langsung dari baris perintah saat menjalankan skrip Bash.
+
+```bash
+# Learn Pass Arguments to a Bash-Script
+
+#! /usr/bin/bash
+
+echo $0 $1 $2 $3 ' > echo $1 $2 $3'
+
+# this arguments variable
+args=("$@")
+
+echo ${args[0]} ${args[1]} ${args[2]}
+
+# Mencetak semua item Argumen
+echo $@
+
+# Jumlah Argumen
+echo $#
+```
+---
+- `$0`, `$1`, `$2`, dan `$3` adalah variabel yang digunakan untuk menyimpan argumen baris perintah yang diberikan saat menjalankan skrip. `$0` adalah nama skrip itu sendiri.
+- `args=("$@")` membuat argumen `args` yang berisi semua argumen baris perintah yang diberikan saat menjalankan skrip.
+- `echo ${args[0]} ${args[1]} ${args[2]}` mencetak nilai dari argument `args`.
+- Perintah `echo $@` digunakan untuk mencetak semua argumen `args`.
+- Perintah `echo $#` digunakan untuk mencetak jumlah total argumen baris perintah yang diberikan saat menjalankan skrip.
