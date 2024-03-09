@@ -25,7 +25,7 @@ Jika anda menggunakan linux, maka menyusun perintah - perintah shell di dalam se
 
 ### File
 
-#### Mencetak Teks ke Layar
+#### #1 Mencetak Teks ke Layar
 
 [`hello.sh`](hello.sh)
 
@@ -37,3 +37,4 @@ echo "Hello, World!"
 ---
 - `#! /usr/bin/bash`: Ini disebut sebagai shebang atau hashbang. Ini memberi tahu sistem operasi bahwa script ini harus dieksekusi menggunakan bash (Bourne Again Shell).
 - `echo "Hello, World!"`: Perintah `echo` digunakan untuk mencetak teks ke terminal. Dalam kasus ini, teks yang dicetak adalah "Halo, dunia!".
+
