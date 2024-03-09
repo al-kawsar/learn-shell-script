@@ -1,4 +1,4 @@
-#! /bin/bash
+#! /usr/bin/bash
 
 echo -e '\nBelajar Variabel di Shell Script \n'
 
