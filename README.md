@@ -25,9 +25,9 @@ Jika anda menggunakan linux, maka menyusun perintah - perintah shell di dalam se
 
 ### File
 
-[`hello.sh`](hello.sh)
-
 #### Mencetak Teks ke Layar
+
+[`hello.sh`](hello.sh)
 
 ```bash
 #! /usr/bin/bash
